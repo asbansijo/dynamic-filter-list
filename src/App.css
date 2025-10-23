@@ -1,38 +1,106 @@
-.App {
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9fb;
+  margin: 0;
+  padding: 0;
+      display: flex;
+    justify-content: center;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+input[type="text"], select {
+  padding: 7px 12px;
+  font-size: 16px;
+  margin: 0 6px 16px 0;
+  border: 1px solid #b6b9ce;
+  border-radius: 4px;
+  background: #fff;
+}
+
+input[type="range"] {
+  width: 120px;
+  vertical-align: middle;
+  margin: 0 5px;
+  accent-color: #000;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: 2px solid #000000;
+}
+
+
+div > input[type="range"] + span {
+  font-size: 14px;
+  color: #444;
+  margin: 0 8px;
+}
+
+
+ul {
+  background: #fff;
+  margin: 16px auto 0;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 9px #e5e5e7;
+  max-width: 96%;
+  list-style: none;
+}
+
+li {
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee;
+  font-size: 17px;
+  color: #24314a;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+strong {
+  color: #363636;
+}
+
+
+button {
+  background: #000000;
+  color: #fff;
+  font-size: 15px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, button:focus {
+  background: #19191a;
+}
+
+
+div, p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+[role="alert"], .error {
+  color: #e04a4c;
+  background: #fff3f3;
+  padding: 10px 0;
+  border-radius: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 700px) {
+  div, ul {
+    max-width: 460px;
   }
 }
